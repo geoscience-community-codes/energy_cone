@@ -2,7 +2,9 @@ The Energy Cone Model
 
 energy_cone calculates the potential run-out of pyroclastic density currents (pdcs) using the Heim coefficient, 
 the ratio of release height in the volcanic plume to total potential run-out length. For a simplified demonstration 
-of the use of the energy cone model, see <a href="http://www.cas.usf.edu/~cconnor/menan_butte.html">Menan Butte</a>
+of the use of the energy cone model, see:
+http://www.cas.usf.edu/~cconnor/menan_butte.html
+
 
 The code loads a digital elevation model of the area. The intersection of the cone with the topographic surface controls
 the total potential run-out distance of the pdc from the volcanc vent.

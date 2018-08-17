@@ -1,0 +1,31 @@
+The Energy Cone Model
+
+energy_cone calculates the potential run-out of pyroclastic density currents (pdcs) using the Heim coefficient, 
+the ratio of release height in the volcanic plume to total potential run-out length. For a simplified demonstration 
+of the use of the energy cone model, see <a href="http://www.cas.usf.edu/~cconnor/menan_butte.html">Menan Butte</a> example</li>.
+
+The code loads a digital elevation model of the area. The intersection of the cone with the topographic surface controls
+the total potential run-out distance of the pdc from the volcanc vent.
+
+Several potential run-out distances are calculated by this code, using a minimum release height, and a maximum release height
+to bound the simulations.
+
+energy_cone takes the following inputs:
+1) A Volcanic region (west, east, south, north) in UTM coordinates
+
+2) The location of the vent in UTM xcoordinates
+
+3) The minimum and maximum heights and the interval between them (km above sea level). This controls how many energy cones
+   are drawn on your map. Use this feature to see how change in height of the pdc release height (H) affects the run-out
+   distance (L), given topography in the area.
+
+4) The H/L ratio. The Heim coefficient controls how far a pdc will run-out (L), given its release height (H) and depending 
+   on local topography. Typically H/L ranges from 0.05 (highly mobile pdc) to 0.5 (low mobility pdc).
+
+5) The minimum and maximum degree and the degree interval. You can plot the entire energy cone (full circle around
+   the volcanic vent) or only a part. The degree interval controls how many radial lines are used to construct
+   the energy cone. A finer interval will lead to a higher resolution, but requires more computation time.
+   
+6) The distance interval along radial line which controls how frequently calculations are made along each radial line
+   to determine the total run-out distance. A smaller distance interval requires more calculation time, but results in
+   a higher resolution map.

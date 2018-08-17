@@ -1,9 +1,8 @@
 #######################################################
-# energy_line.gmt.pl - a tool to plot the output of the 
-# energy_cone model
+# energy_cone - a tool to calculate and plot the potential
+# run-out of pyroclastic density currents
 # written in perl
-# uses GMT (Generic Mapping Tools) commands
-# outputs a PNG and eps file
+# uses GMT5 (Generic Mapping Tools) 
 #
 #    Copyright (C) 2018  Laura Connor, Chuck Connor
 #
@@ -19,10 +18,10 @@
 #
 #    You should have received a copy of the GNU General Public License
 #    along with this program.  If not, see <http://www.gnu.org/licenses/>.
-###########################################################################
-
-# local $ENV{PATH} = "$ENV{PATH}:/opt/gmt5/bin";
-# local $ENV{HOME} = ".";
+##########################################################################
+# energy_line.gmt.pl - this part of the tool plots the output of the
+# model as a .eps and PNG file. It also uses the configuration file.
+##########################################################################
 use Carp;
 
 print STDERR "USAGE: $0 <config-file>\n\n";
